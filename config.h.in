@@ -1,0 +1,2 @@
+#define VERSION_STR "@VERSION@"
+#define AUTHOR "@AUTHOR@"

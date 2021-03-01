@@ -1,0 +1,11 @@
+
+option('ignored-network-interface-prefix', type: 'array', value: ['docker', 'veth', 'virbr', 'vnet'],
+  description: 'Ignore network interfaces whose name starts with a string from this list in the ICE connection check algorithm. For example, "virbr" to ignore virtual bridge interfaces added by virtd, which do not help in finding connectivity.')
+option('crypto-library', type: 'combo', choices : ['auto', 'gnutls', 'openssl'], value : 'auto')
+
+# Common feature options
+option('examples', type : 'feature', value : 'auto', yield : true,
+  description: 'Build examples')
+option('tests', type : 'feature', value : 'auto', yield : true,
+  description: 'Enable or disable unit tests')
+
